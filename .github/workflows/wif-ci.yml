@@ -28,4 +28,4 @@ jobs:
       - name: set crdential_file
         run: gcloud auth login --cred-file=${{steps.auth.outputs.credentials_file_path}}
       - name: Run gcloud
-        run: gcloud compute instances delete instance-20250827-112104\ --zone=us-east4-c
+        run: gcloud compute instances delete instance-20250827-112104 --zone us-east4-c
